@@ -1,0 +1,26 @@
+.profile{
+    width: 40%;
+    float: left;
+    height: 80vh;
+    margin: 1%;
+}
+
+.tasks{
+    width: 55%;
+    float: right;
+    height: 80vh;
+    background-color: blue;
+    margin: 1%;
+}
+
+@media screen and (max-width: 600px) {
+    .tasks, .profile{
+        width: 90%;
+        margin: 5%;
+        float: none;
+    }
+
+    .profile{
+        height: 20%;
+    }
+}

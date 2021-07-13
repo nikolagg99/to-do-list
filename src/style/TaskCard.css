@@ -1,0 +1,37 @@
+.task-card{
+  text-align: center;
+  width: 20%;
+  background: #fff;
+  border: 1px solid rgb(36, 33, 33);
+  border-radius: 10%;
+  transition: 0.3s;
+  margin: 1em;
+  background-color: rgba(226, 182, 100, 0.849);
+  float: left;
+  cursor: pointer;
+}
+
+.task-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+.img-plus{
+  width: 50%; 
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .task-card {
+      width: 40%;
+    }
+  }
+
+@media screen and (max-width: 620px) {
+    .task-card {
+        width: 80%;
+      }
+}

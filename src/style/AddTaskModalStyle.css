@@ -1,0 +1,15 @@
+.modal-div{
+    border: 3px solid green;
+    width: 40%;
+    background-color: red;
+    margin: auto;
+    opacity: 1;
+    position: absolute;
+    margin-top: 2em;
+}
+
+.close-btn{
+    margin: 1em;
+    border-radius: 10%;
+    width: 42%;
+}

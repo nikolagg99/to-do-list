@@ -1,0 +1,32 @@
+.user-card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    height: 100%;
+    background-color: blue;
+}
+
+.user-card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.info-container{
+    padding: auto;
+    width: 50%;
+    margin: auto;
+    align-content: center;
+    color: white;
+}
+
+.img-avatar{
+   width: 50%; 
+   border: 2px solid white;
+   border-radius: 50%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.image-container{
+    padding-top: 5%;
+}
+

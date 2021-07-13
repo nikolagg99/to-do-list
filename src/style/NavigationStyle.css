@@ -1,0 +1,15 @@
+.navigation{
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 2px solid blue;
+    width: 100%;
+    margin: auto;
+}
+
+.nav-item{
+    background-color: blue;
+    margin: 0%;
+    padding: 1%;
+    color: white;
+    cursor: pointer;
+}
