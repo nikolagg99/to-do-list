@@ -11,14 +11,9 @@ class App extends Component{
     this.state = {
       isLoginOpen: true,
       isRegisterOpen: false,
-      route: 'signin',
-      isSignedIn: false,
-      user:{
-            id: '',
-            username:'',
-            firstname:'',
-            lastname:''
-      }
+      route: localStorage.getItem('routing'),
+      isSignedIn: localStorage.getItem('isSignedIn'),
+      user: JSON.parse(localStorage.getItem('loggedUser')) || []
     };
   }
 
@@ -28,7 +23,9 @@ class App extends Component{
       username:data.username,
       firstname:data.firstname,
       lastname:data.lastname
-    }})
+    }}, () =>{
+      localStorage.setItem('loggedUser', JSON.stringify(this.state.user))
+    })
   }
 
   showLoginBox() {
@@ -42,8 +39,13 @@ class App extends Component{
   onRouteChange = (route) => {
     if (route === 'signout') {
         this.setState({isSignedIn: false})
+        localStorage.setItem('routing', 'signout')
+        localStorage.setItem('isSignedIn', false)
+        localStorage.removeItem('loggedUser')
     }else if (route === 'home') {
         this.setState({isSignedIn:true})
+        localStorage.setItem('routing', 'home')
+        localStorage.setItem('isSignedIn', true)
     }
     this.setState({route: route})
   }
