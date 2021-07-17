@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to right, rgb(0, 204, 255) , rgb(5, 62, 168));
 }
 
 code {
@@ -13,5 +14,5 @@ code {
 }
 h1{
   text-align: center;
-  color: blue;
+  color: rgb(2, 2, 151);
 }
