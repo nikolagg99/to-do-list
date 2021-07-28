@@ -29,7 +29,7 @@ class Tasks extends Component{
     };
 
     readTask = () =>{
-        fetch(`http://localhost:3000/read-tasks/${this.props.id}`, {
+        fetch(`https://mighty-anchorage-31699.herokuapp.com/read-tasks/${this.props.id}`, {
             method: 'get',
             headers: {'Content-Type': 'application/json'},      
         })
@@ -44,7 +44,7 @@ class Tasks extends Component{
     }
 
     deleteTask = (id) =>{
-        fetch(`http://localhost:3000/delete-task/${id}`, {
+        fetch(`https://mighty-anchorage-31699.herokuapp.com/delete-task/${id}`, {
             method: 'delete',
             headers:{'Content-Type': 'application/json'}
         })

@@ -25,7 +25,7 @@ class Modal extends Component{
     }
 
     onSubmitTask = () => {
-        fetch('http://localhost:3000/add-task', {
+        fetch('https://mighty-anchorage-31699.herokuapp.com/add-task', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
