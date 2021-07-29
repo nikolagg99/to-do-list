@@ -10,8 +10,19 @@
     border-radius: 2em;
 }
 
-.close-btn{
+.close-btn, .add-btn{
     margin: 1em;
     border-radius: 10%;
     width: 42%;
+}
+
+.input-date, .add-task-input{
+    width: 100%;
+}
+
+.btn-div{
+    background-color: red;
+    align-items: center;
+    justify-content: center;
+    padding-left: 29%;
 }

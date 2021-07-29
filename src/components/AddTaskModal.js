@@ -63,7 +63,7 @@ class Modal extends Component{
                         ></input>
                 </div>
                 <div className="form-group">
-                    <label htmlFor="taskName">Task name: </label>
+                    <label htmlFor="taskName"><b>Task name:</b> </label>
                     <input 
                         type="text" 
                         id="taskName" 
@@ -73,7 +73,7 @@ class Modal extends Component{
                         />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="taskDescription">Task description: </label>
+                    <label htmlFor="taskDescription"><b>Task description:</b> </label>
                     <input 
                         type="text" 
                         id="taskDescription" 
@@ -83,8 +83,10 @@ class Modal extends Component{
                         />
                 </div>
                 <hr/>
-                <button className='close-btn' onClick={this.props.closeModal}>Close</button>
-                <button className='close-btn' onClick={this.onSubmitTask}>Add</button>
+                <div className="btn-div">
+                    <button className='close-btn' onClick={this.props.closeModal}>Close</button>
+                    <button className='add-btn' onClick={this.onSubmitTask}>Add</button>
+                </div>
             </div>
         );
     }
